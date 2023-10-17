@@ -1,11 +1,13 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 2rem;
 
   font-weight: normal;
+
+  width: 100%;
 }
 
 a,
@@ -25,11 +27,17 @@ a,
   body {
     display: flex;
     place-items: center;
+    
   }
 
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     padding: 0 2rem;
+  }
+  
+  main {
+    box-sizing: border-box;
+    margin: 10px;
   }
 }

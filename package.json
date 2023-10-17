@@ -8,8 +8,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "vee-validate": "^4.11.8",
     "vue": "^3.3.4",
-    "vuetify": "^3.3.21"
+    "vuetify": "^3.3.21",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.3.4",

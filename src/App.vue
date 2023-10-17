@@ -1,20 +1,19 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-import MovieList from './components/MovieList.vue'
+import MovieList from './components/Movies/MovieList.vue'
+import SearchBar from './components/SearchBar.vue'
 
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      
-    </div>
+    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="40" height="40" />
+    <h1>
+      Movie List Vue App
+    </h1>
   </header>
 
   <main>
+    <SearchBar />
     <MovieList />
   </main>
 </template>
@@ -26,14 +25,14 @@ header {
 
 .logo {
   display: block;
-  margin: 0 auto 2rem;
+  margin: 10 auto 2rem;
 }
 
 @media (min-width: 1024px) {
   header {
     display: flex;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+    padding-right: 10px;
   }
 
   .logo {
